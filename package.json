@@ -1,0 +1,25 @@
+{
+  "name": "maps-project",
+  "version": "1.0.0",
+  "description": "Maps project to show an user and company latitude and longitude in a map, implemented with parcel, google maps api and typescript",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiangRVR/maps-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiangRVR/maps-project/issues"
+  },
+  "homepage": "https://github.com/LiangRVR/maps-project#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
