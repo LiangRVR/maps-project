@@ -21,5 +21,8 @@
   "homepage": "https://github.com/LiangRVR/maps-project#readme",
   "devDependencies": {
     "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.4.0"
   }
 }
