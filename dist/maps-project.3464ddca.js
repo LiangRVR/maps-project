@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"iJYvl":[function(require,module,exports) {
+})({"c4xoB":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "5c1b77e3b71e74eb";
+module.bundle.HMR_BUNDLE_ID = "0907ca6d3464ddca";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,19 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"h7u1C":[function(require,module,exports) {
-/* import { User } from "./User";
-import { Company } from "./Company";
+},{}],"j4kuM":[function(require,module,exports) {
 
- */ const mapElement = document.getElementById("map");
-new google.maps.Map(mapElement, {
-    zoom: 1,
-    center: {
-        lat: 0,
-        lng: 0
-    }
-});
+},{}]},["c4xoB","j4kuM"], "j4kuM", "parcelRequire2f76")
 
-},{}]},["iJYvl","h7u1C"], "h7u1C", "parcelRequire2f76")
-
-//# sourceMappingURL=index.b71e74eb.js.map
+//# sourceMappingURL=maps-project.3464ddca.js.map

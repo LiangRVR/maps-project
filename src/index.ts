@@ -1,5 +1,13 @@
-import { User } from "./User";
+/* import { User } from "./User";
+import { Company } from "./Company";
 
-const user = new User();
+ */
+const mapElement = document.getElementById("map");
 
-console.log(user);
+new google.maps.Map(mapElement as HTMLElement, {
+  zoom: 1,
+  center: {
+    lat: 0,
+    lng: 0,
+  },
+});
