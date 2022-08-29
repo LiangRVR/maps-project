@@ -1,12 +1,14 @@
-interface Mappable {
+export interface Mappable {
   location: {
     lat: number;
     lng: number;
   };
+  markerContent(): string;
 }
 
 export class CustomMap {
   private customMap: google.maps.Map;
+  private infoWindow: google.maps.InfoWindow;
 
   constructor(divId: string) {
     const mapElement = document.getElementById(divId);
@@ -18,14 +20,23 @@ export class CustomMap {
         lng: 0,
       },
     });
+    
+    this.infoWindow = new google.maps.InfoWindow();
   }
+
   addMarker(mappable: Mappable): void {
-    new google.maps.Marker({
+    const marker = new google.maps.Marker({
       map: this.customMap,
       position: {
         lat: mappable.location.lat,
         lng: mappable.location.lng,
       },
+    });
+
+    marker.addListener("click", (): void => {
+      this.infoWindow.close();
+      this.infoWindow.setContent(mappable.markerContent());
+      this.infoWindow.open(this.customMap, marker);
     });
   }
 }
